@@ -14,7 +14,7 @@ const NavApp = () => {
           <Nav className="me-auto">
             <Link to="/">Criptomonedas</Link>
             <Link to="/community">Comunidad</Link>
-            <Link to="/learn">Aprender</Link>
+            <Link to="/news">Noticias</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
