@@ -1,7 +1,7 @@
 import React from "react";
 import CardTrend from "./CardTrend";
 
-const TrendingCards = () => {
+const TrendGrid = () => {
   return (
     <>
       <h5>Temas en tendencia:</h5>
@@ -23,4 +23,4 @@ const TrendingCards = () => {
   );
 };
 
-export default TrendingCards;
+export default TrendGrid;

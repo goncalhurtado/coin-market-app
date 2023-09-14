@@ -38,8 +38,7 @@ const Feed = () => {
             </div>
             <div className="m-auto mt-3">
               <div>
-                <h3>Feed recomendado</h3>
-                <div className="text-center">
+                <div className="">
                   <Posts />
                 </div>
               </div>
