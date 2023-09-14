@@ -6,11 +6,6 @@ const NavCommunity = () => {
     <>
       <div>
         <Link to="/community/*" className="">
-          Comunidad
-        </Link>
-      </div>
-      <div>
-        <Link to="/community/feed" className="">
           Feed
         </Link>
       </div>

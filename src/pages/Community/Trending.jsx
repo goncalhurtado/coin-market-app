@@ -1,5 +1,6 @@
 import React from "react";
 import NavCommunity from "../../components/navs/NavCommunity";
+import TrendingCards from "../../components/trending/TrendingCard";
 
 const Trending = () => {
   return (
@@ -9,7 +10,9 @@ const Trending = () => {
           <div className="col-2">
             <NavCommunity />
           </div>
-          <div className="col-10">Temas</div>
+          <div className="col-10">
+            <TrendingCards />
+          </div>
         </div>
       </div>
     </>

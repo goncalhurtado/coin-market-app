@@ -18,10 +18,10 @@ const Crypto = () => {
             aumento de 1.17% durante el último día. <a href="">Leer más</a>
           </p>
         </div>
-        <div>
+        <div className="">
           <CardsHome />
         </div>
-        <div>
+        <div className="mt-5">
           <Table />
         </div>
       </div>

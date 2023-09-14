@@ -6,25 +6,21 @@ const Table = () => {
     {
       name: "Title",
       selector: (row) => row.title,
+      sortable: true,
+    },
+    {
+      name: "Director",
+      selector: (row) => row.director,
+      sortable: true,
     },
     {
       name: "Year",
       selector: (row) => row.year,
+      sortable: true,
     },
   ];
-  const data = [
-    {
-      id: 1,
-      title: "Beetlejuice",
-      year: "1988",
-    },
-    {
-      id: 2,
-      title: "Ghostbusters",
-      year: "1984",
-    },
-  ];
-  return <DataTable columns={columns} data={data} />;
+
+  return <DataTable title="" columns={columns} />;
 };
 
 export default Table;

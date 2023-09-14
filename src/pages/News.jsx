@@ -1,4 +1,5 @@
 import React from "react";
+import CardNews from "../components/news/CardNews";
 
 const News = () => {
   return (
@@ -12,6 +13,11 @@ const News = () => {
             </a>
           </div>
           <p>Insights into the biggest events shaping the crypto industry.</p>
+        </div>
+        <div>
+          <CardNews />
+          <CardNews />
+          <CardNews />
         </div>
       </div>
     </>

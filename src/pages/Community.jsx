@@ -13,11 +13,10 @@ const Community = () => {
           <div className="col-2">
             <NavCommunity />
           </div>
-          <div className="col-10">Home communidad</div>
         </div>
       </div>
       <Routes>
-        <Route path="/community/feed" element={<Feed />} />
+        <Route path="/community/*" element={<Feed />} />
         <Route path="/community/trending" element={<Trending />} />
         <Route path="/community/mypage" element={<MyPage />} />
       </Routes>

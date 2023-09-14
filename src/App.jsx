@@ -18,8 +18,7 @@ function App() {
       <Routes>
         <Route path="*" element={<Error />} />
         <Route path="/" element={<Crypto />} />
-        <Route path="community/*" element={<Community />} />
-        <Route path="/community/feed" element={<Feed />} />
+        <Route path="/community/*" element={<Feed />} />
         <Route path="/community/trending" element={<Trending />} />
         <Route path="/community/mypage" element={<MyPage />} />
         <Route path="/news" element={<News />} />
