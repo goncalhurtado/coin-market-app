@@ -33,10 +33,22 @@ const Publication = () => {
         </p>
       </div>
       <div className="d-flex justify-content-around">
-        <a href="">like</a>
-        <a href="">dislike</a>
-        <a href="">rt</a>
-        <a href="">commment</a>
+        <div className="d-flex">
+          <p>10</p>
+          <a href="">like</a>
+        </div>
+        <div className="d-flex">
+          <p>5</p>
+          <a href="">dislike</a>
+        </div>
+        <div className="d-flex">
+          <p>3</p>
+          <a href="">rt</a>
+        </div>
+        <div className="d-flex">
+          <p>5</p>
+          <a href="">commment</a>
+        </div>
       </div>
     </div>
   );

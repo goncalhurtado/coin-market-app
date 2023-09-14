@@ -4,19 +4,30 @@ import { Link } from "react-router-dom";
 const NavCommunity = () => {
   return (
     <>
-      <div>
-        <Link to="/community/*" className="">
-          Feed
+      <div className="navcom">
+        <div className="navcom__link">
+          <div className="d-flex">
+            {/* <a>logo</a> */}
+            <h5>Communidad</h5>
+          </div>
+        </div>
+        <Link to="/community/*" className="navcom__link">
+          <div className="d-flex">
+            {/* <a>logo</a> */}
+            <p>Feed</p>
+          </div>
         </Link>
-      </div>
-      <div>
-        <Link to="/community/trending" className="">
-          Temas
+        <Link to="/community/trending" className="navcom__link">
+          <div className="d-flex">
+            {/* <a>logo</a> */}
+            <p>Temas</p>
+          </div>
         </Link>
-      </div>{" "}
-      <div>
-        <Link to="/community/mypage" className="">
-          Mi página
+        <Link to="/community/mypage" className="navcom__link">
+          <div className="d-flex">
+            {/* <a>logo</a> */}
+            <p>Mi pagina</p>
+          </div>
         </Link>{" "}
       </div>
     </>

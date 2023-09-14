@@ -1,7 +1,20 @@
 $primary: #000f14;
+$secondary: #142e37;
 $text: #edf7ee;
 
 body {
     background-color: $primary !important;
     color: $text !important;
+}
+
+input {
+    background-color: $secondary !important;
+}
+
+textarea {
+    background-color: $secondary !important;
+}
+
+input::placeholder {
+    color: gray !important;
 }

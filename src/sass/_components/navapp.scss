@@ -1,0 +1,18 @@
+$primary: #000f14;
+$secondary: #142e37;
+$text: #edf7ee;
+
+:root {
+    .bg-body-tertiary {
+        background-color: $primary !important;
+    }
+
+    .bg-body-tertiary a {
+        color: $text !important;
+        text-decoration: none;
+        padding: 0;
+        margin-right: 2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

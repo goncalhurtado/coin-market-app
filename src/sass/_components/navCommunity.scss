@@ -1,0 +1,19 @@
+$primary: #000f14;
+$secondary: #142e37;
+$text: #edf7ee;
+
+.navcom {
+    height: 100%;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__link {
+        color: $text;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
