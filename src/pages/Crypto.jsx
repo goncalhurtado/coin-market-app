@@ -1,5 +1,6 @@
 import React from "react";
 import CardsHome from "../components/CardsHome";
+import Table from "../components/Table";
 
 const Crypto = () => {
   return (
@@ -19,6 +20,9 @@ const Crypto = () => {
         </div>
         <div>
           <CardsHome />
+        </div>
+        <div>
+          <Table />
         </div>
       </div>
     </>
