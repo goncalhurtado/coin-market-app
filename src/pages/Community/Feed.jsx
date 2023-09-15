@@ -6,12 +6,12 @@ import Recomend from "../../components/feed/Recomend";
 const Feed = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-2">
             <NavCommunity />
           </div>
-          <div className="col-8">
+          <div className="col-8 mt-3">
             <div className="row d-flex justify-content-center mt-3">
               <div className="col-2">
                 <img

@@ -2,7 +2,7 @@ import React from "react";
 
 const Publication = () => {
   return (
-    <div className="card">
+    <div className="card w-75 d-flex">
       <div className="row">
         <div className="col-1">
           <img src="" alt="avatar" className="" />

@@ -4,7 +4,9 @@ import Publication from "./Publication";
 const PublicationGrid = () => {
   return (
     <>
-      <Publication />
+      <div className="d-flex justify-content-center">
+        <Publication />
+      </div>
     </>
   );
 };

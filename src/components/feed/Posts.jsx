@@ -4,7 +4,7 @@ import PublicationGrid from "./PublicationGrid";
 const Posts = () => {
   return (
     <>
-      <div>
+      <div className="">
         <h4>For You</h4>
         <div>
           <input

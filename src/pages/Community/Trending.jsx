@@ -5,7 +5,7 @@ import TrendGrid from "../../components/trending/TrendGrid";
 const Trending = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-2">
             <NavCommunity />

@@ -7,8 +7,10 @@ import { Link } from "react-router-dom";
 const NavApp = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-      <Container className="">
-        <Navbar.Brand href="#home">Severus Market</Navbar.Brand>
+      <div className="container-fluid">
+        <Navbar.Brand href="#home" className="ms-3">
+          Severus Market
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -24,7 +26,7 @@ const NavApp = () => {
             </Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+      </div>
     </Navbar>
   );
 };

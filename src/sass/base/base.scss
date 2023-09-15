@@ -1,10 +1,8 @@
-$primary: #000f14;
-$secondary: #142e37;
-$text: #edf7ee;
-
 body {
     background-color: $primary !important;
     color: $text !important;
+    height: 100% !important;
+    width: 100% !important;
 }
 
 input {
@@ -17,4 +15,19 @@ textarea {
 
 input::placeholder {
     color: gray !important;
+}
+
+a {
+    color: $text-second;
+    cursor: pointer;
+}
+
+:root {
+    .col-2 {
+        padding: 0px !important;
+    }
+}
+
+i {
+    cursor: pointer;
 }

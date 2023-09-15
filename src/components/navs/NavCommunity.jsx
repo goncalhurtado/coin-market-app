@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavCommunity = () => {
   return (
     <>
-      <div className="navcom">
+      <div className="navcom pt-3">
         <div className="navcom__link">
           <div className="d-flex">
             {/* <a>logo</a> */}

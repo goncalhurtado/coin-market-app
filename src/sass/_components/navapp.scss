@@ -1,10 +1,8 @@
-$primary: #000f14;
-$secondary: #142e37;
-$text: #edf7ee;
-
 :root {
     .bg-body-tertiary {
         background-color: $primary !important;
+        border-top: 1px solid $secondary;
+        border-bottom: 1px solid $secondary;
     }
 
     .bg-body-tertiary a {

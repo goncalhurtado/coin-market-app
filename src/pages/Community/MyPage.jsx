@@ -4,7 +4,7 @@ import NavCommunity from "../../components/navs/NavCommunity";
 const MyPage = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-2">
             <NavCommunity />{" "}

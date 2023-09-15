@@ -1,4 +1,3 @@
-import "./sass/vendors/main.scss";
 import NavApp from "./components/navs/NavApp";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";

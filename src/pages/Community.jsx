@@ -8,7 +8,7 @@ import MyPage from "./Community/MyPage";
 const Community = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-2">
             <NavCommunity />
