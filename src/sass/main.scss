@@ -1,7 +1,9 @@
 @import "./themes/variables.scss";
 @import "./base/base.scss";
+//components
 @import "./_components/card.scss";
 @import "./_components/navapp.scss";
 @import "./_components/navCommunity.scss";
+@import "./_components/createPost.scss";
 //pages
 @import "./pages/crypto.scss";

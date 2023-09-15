@@ -1,0 +1,14 @@
+.text-area-post {
+    height: 100px !important;
+    padding: 5px !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: $text !important;
+    font-size: small;
+}
+
+.bi-emoji-smile {
+    font-size: 20px;
+    color: $text-second;
+}

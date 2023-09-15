@@ -10,7 +10,7 @@ const Trending = () => {
           <div className="col-2">
             <NavCommunity />
           </div>
-          <div className="col-10">
+          <div className="col-10 vh-100">
             <TrendGrid />
           </div>
         </div>

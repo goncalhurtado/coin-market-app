@@ -13,6 +13,10 @@ textarea {
     background-color: $secondary !important;
 }
 
+textarea::placeholder {
+    color: gray !important;
+}
+
 input::placeholder {
     color: gray !important;
 }
@@ -30,4 +34,20 @@ a {
 
 i {
     cursor: pointer;
+}
+
+:root {
+    .btn {
+        padding: 0px !important;
+        font-weight: normal;
+        width: 82px;
+        // height: 23px;
+    }
+
+    .btn-primary {
+        padding: 9px !important;
+        padding-top: 0px;
+        background-color: $action-primary;
+        border: 0;
+    }
 }
