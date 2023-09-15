@@ -8,7 +8,7 @@ const NavApp = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <div className="container-fluid">
-        <Navbar.Brand href="#home" className="ms-3">
+        <Navbar.Brand href="#home" className="ms-4">
           Severus Market
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

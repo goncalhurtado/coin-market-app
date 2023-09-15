@@ -3,13 +3,39 @@
     background-color: $secondary;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+
+    &__header {
+        color: $text;
+        text-decoration: none;
+        display: flex;
+        margin-bottom: 20px;
+        cursor: text;
+
+        i {
+            cursor: text;
+        }
+    }
 
     &__link {
         color: $text;
         text-decoration: none;
         display: flex;
-        flex-direction: column;
-        align-items: start;
+        padding-bottom: 10px;
+        width: 100%;
+        border-radius: 5px;
+
+        &__content {
+            display: flex;
+            align-items: center;
+        }
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    &__link:hover {
+        background-color: $text-second;
     }
 }
