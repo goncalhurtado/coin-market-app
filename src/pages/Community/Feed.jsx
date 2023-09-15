@@ -14,6 +14,7 @@ const Feed = () => {
           </div>
           <div className="col-7 mt-3">
             <CreatePost />
+            <hr />
             <div className="m-auto mt-3">
               <div>
                 <div className="">

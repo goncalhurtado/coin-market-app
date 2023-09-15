@@ -26,14 +26,14 @@ a {
     cursor: pointer;
 }
 
+i {
+    cursor: pointer;
+}
+
 :root {
     .col-2 {
         padding: 0px !important;
     }
-}
-
-i {
-    cursor: pointer;
 }
 
 :root {
@@ -49,5 +49,26 @@ i {
         padding-top: 0px;
         background-color: $action-primary;
         border: 0;
+    }
+
+    .btn-secondary {
+        padding: 9px !important;
+        padding-top: 0px;
+        background-color: $text-second;
+        border: 0;
+    }
+}
+
+hr {
+    color: $text-second !important;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    .card-primary {
+        background-color: $secondary !important;
     }
 }
