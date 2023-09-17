@@ -20,7 +20,7 @@ const Table = () => {
     },
   ];
 
-  return <DataTable title="" columns={columns} />;
+  return <DataTable title="Movie List" columns={columns} pagination />;
 };
 
 export default Table;
