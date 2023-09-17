@@ -1,21 +1,24 @@
 import React from "react";
 
-const UserFollow = () => {
+const UserFollow = ({ userData }) => {
   return (
     <>
-      {" "}
       <li className="ms-3">
         <div className="d-flex mb-2">
           <div>
             <img
-              src="https://s2.coinmarketcap.com/static/cloud/img/avatars/default.png"
+              src={userData.profile_picture}
               alt="userImg"
               className="recomend-img me-2"
             />
           </div>
           <div className="mb-auto ">
-            <p className="m-0 username p-0">Username</p>
-            <p className="m-0 text-secondary p-0 user">@User</p>
+            <p className="m-0 username p-0">
+              {userData.first_name} {userData.last_name}
+            </p>
+            <p className="m-0 text-secondary p-0 user mt-1">
+              @{userData.username}
+            </p>
           </div>
           <div className="ms-auto me-3">
             <div className="btn btn-secondary btn-follow">Seguir</div>
