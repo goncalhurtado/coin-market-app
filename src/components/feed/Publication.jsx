@@ -2,7 +2,7 @@ import React from "react";
 
 const Publication = () => {
   return (
-    <div className="card w-75 d-flex">
+    <div className="card card-publication w-75 d-flex mb-5">
       <div className="row">
         <div className="col-1">
           <img
@@ -37,18 +37,21 @@ const Publication = () => {
         />
       </div>
 
-      <div className="d-flex justify-content-around">
+      <div className="ms-5 me-5 d-flex justify-content-around">
         <div className="d-flex">
           <i className="bi bi-suit-heart"></i>
-          <p>10</p>
+          <p className="ms-1">10</p>
         </div>
         <div className="d-flex">
           <i className="bi bi-repeat"></i>
-          <p>3</p>
+          <p className="ms-1">3</p>
         </div>
         <div className="d-flex">
-          <i className="bi bi-chat-left-dots"></i>
-          <p>5</p>
+          <i className="bi bi-chat-right-dots"></i>
+          <p className="ms-1">5</p>
+        </div>
+        <div className="d-flex">
+          <i className="bi bi-three-dots"></i>
         </div>
       </div>
     </div>

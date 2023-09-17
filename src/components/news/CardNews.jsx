@@ -8,7 +8,11 @@ const CardNews = () => {
           <div className="card">
             <div className="row g-0">
               <div className="col-md-4">
-                <img src="" alt="" className="img-fluid rounded-start" />
+                <img
+                  src="https://ipsnoticias.net/wp-content/uploads/2021/05/seguridad-de-criptomoneda-629x347-1.jpg"
+                  alt=""
+                  className="img-fluid"
+                />
               </div>
               <div className="col-md-8">
                 <div className="card-body">
@@ -18,9 +22,7 @@ const CardNews = () => {
                     Vero, vitae veniam? Mollitia.
                   </p>
                   <p className="card-text">
-                    <small className="text-body-secondary">
-                      Last update 3 mins ago
-                    </small>
+                    <small className="text-secondary">date</small>
                   </p>
                 </div>
               </div>
