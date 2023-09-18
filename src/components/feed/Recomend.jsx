@@ -21,7 +21,7 @@ const Recomend = () => {
       <h6 className="text-start ms-3 ">Cuentas recomendadas</h6>
       <ul className="m-0 p-0 text-start">
         {users.map((data) => {
-          return <UserFollow userData={data} key={data.id} />;
+          return <UserFollow userData={data} key={data.user_id} />;
         })}
       </ul>
     </div>

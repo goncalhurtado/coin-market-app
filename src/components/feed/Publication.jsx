@@ -1,28 +1,27 @@
 import React from "react";
 
-const Publication = () => {
+const Publication = ({ post }) => {
   return (
-    <div className="card card-publication w-75 d-flex mb-5">
+    <div className="card card-publication w-75 d-flex mb-5 col-12">
       <div className="row">
         <div className="col-1">
           <img
-            src="https://s2.coinmarketcap.com/static/cloud/img/avatars/default.png"
+            src={post.profile_picture}
             alt="avatar"
-            className="publication-img"
+            className="rounded-circle"
           />
         </div>
         <div className="col-9 ms-3">
           <div className="d-flex">
-            <p className="username">Username</p>
+            <p className="username">
+              {post.first_name} {post.last_name}
+            </p>
             <p className="card-text">
-              <small className="user">@user</small>
+              <small className="user">@{post.username}</small>
             </p>
           </div>
           <div>
-            <p className="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              hic doloremque ut. Accusamus, delectus incidunt.
-            </p>
+            <p className="text-start">{post.post}</p>
           </div>
         </div>
         <div className="col-1">
@@ -31,8 +30,8 @@ const Publication = () => {
       </div>
       <div className="">
         <img
-          className="card-img w-75 mb-2"
-          src="https://st1.u-tad.com/media/2021/02/animacion-2d-img-2-1024x576.jpg"
+          className="card-img w-75 mb-2 publication-img"
+          src={post.img}
           alt=""
         />
       </div>
@@ -40,15 +39,15 @@ const Publication = () => {
       <div className="ms-5 me-5 d-flex justify-content-around">
         <div className="d-flex">
           <i className="bi bi-suit-heart"></i>
-          <p className="ms-1">10</p>
+          <p className="ms-1">{post.likes}</p>
         </div>
         <div className="d-flex">
           <i className="bi bi-repeat"></i>
-          <p className="ms-1">3</p>
+          <p className="ms-1">{post.shared}</p>
         </div>
         <div className="d-flex">
           <i className="bi bi-chat-right-dots"></i>
-          <p className="ms-1">5</p>
+          <p className="ms-1">{post.comments}</p>
         </div>
         <div className="d-flex">
           <i className="bi bi-three-dots"></i>

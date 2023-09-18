@@ -6,13 +6,13 @@ const Posts = () => {
     <>
       <div className="">
         <h4>For You</h4>
-        <div>
+        {/* <div>
           <input
             type="text"
             className="form-control mt-3"
             placeholder="Buscar publicaciones o usuarios"
           />
-        </div>
+        </div> */}
         <div className="text-center mt-4">
           <PublicationGrid />
         </div>

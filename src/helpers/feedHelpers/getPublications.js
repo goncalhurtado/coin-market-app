@@ -1,43 +1,6 @@
 import axios from "axios"
 import { getUser, generateId } from "./getUser";
 
-export const getPosts = async(number = 5) => {
-    const url = `https://jsonplaceholder.typicode.com/posts`
-    const response = await axios.get(url)
-    const { data } = response;
-
-
-    let posts = data.map((data) => {
-        return {
-            postId: generateId(),
-            post: data.body,
-            likes: generateNumber("likes"),
-            shared: generateNumber("shared"),
-            comments: generateNumber("comments"),
-        }
-
-    })
-    let postLimited = posts.slice(0, number)
-        // console.log(postLimited);
-    return postLimited;
-
-}
-
-export const getImg = async(number = 5) => {
-    const url = `https://picsum.photos/v2/list?page=1&limit=${number}`
-    const response = await axios.get(url)
-    const { data } = response;
-
-    let img = data.map((data) => {
-        return {
-            img: data.url
-        }
-
-    })
-    return img;
-}
-
-
 
 export const getPublications = async(number = 5) => {
     let users = await getUser(number);
@@ -46,7 +9,7 @@ export const getPublications = async(number = 5) => {
 
     const result = users.map((user, index) => ({
         ...user,
-        postId: posts[index].postId,
+        post_id: posts[index].post_id,
         post: posts[index].post,
         likes: posts[index].likes,
         shared: posts[index].shared,
@@ -54,9 +17,47 @@ export const getPublications = async(number = 5) => {
         img: img[index].img
 
     }));
-    console.log(result);
+
+    return result;
 
 }
+
+
+const getPosts = async(number = 5) => {
+    const url = `https://jsonplaceholder.typicode.com/posts`
+    const response = await axios.get(url)
+    const { data } = response;
+
+    let posts = data.map((data) => {
+        return {
+            post_id: generateId(),
+            post: data.body,
+            likes: generateNumber("likes"),
+            shared: generateNumber("shared"),
+            comments: generateNumber("comments"),
+        }
+
+    })
+    let postLimited = posts.slice(0, number)
+    return postLimited;
+
+}
+
+const getImg = async(number = 5) => {
+    const url = `https://picsum.photos/v2/list?page=1&limit=${number}`
+    const response = await axios.get(url)
+    const { data } = response;
+
+    let img = data.map((data) => {
+        return {
+            img: data.download_url
+        }
+    })
+
+    return img;
+}
+
+
 
 
 
@@ -77,5 +78,3 @@ let generateNumber = (number) => {
     }
     return result
 }
-
-getPublications(5)

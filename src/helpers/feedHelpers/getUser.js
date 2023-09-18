@@ -7,7 +7,7 @@ export const getUser = async(number) => {
     let users = results.map((data) => {
 
         return {
-            id: generateId(),
+            user_id: generateId(),
             username: data.login.username,
             mail: data.email,
             first_name: data.name.first,
