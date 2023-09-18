@@ -20,7 +20,7 @@ export const getUser = async(number) => {
     // console.log(users);
 }
 
-let generateId = () => {
+export let generateId = () => {
     let result = Math.floor(100000 + Math.random() * 900000);
     return result
 }
