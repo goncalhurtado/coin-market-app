@@ -20,8 +20,8 @@ const Table = ({ data, setCoinnfo }) => {
           className="d-flex align-items-center"
           onClick={(e) => {
             e.preventDefault();
-            console.log(row.id);
-            setCoinnfo(row.id);
+            // console.log(row.id);
+            setCoinnfo(row);
           }}
         >
           <img src={row.image} alt={row.name} className="crypto_img" />
