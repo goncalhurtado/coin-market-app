@@ -1,0 +1,21 @@
+.news {
+    border: none;
+    cursor: pointer;
+
+    &__img {
+        margin-top: 20px;
+    }
+
+    &__title {
+        font-size: medium;
+    }
+
+    &__description {
+        font-size: small;
+        margin-bottom: 5px !important;
+    }
+
+    &__date {
+        font-size: small;
+    }
+}
