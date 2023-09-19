@@ -1,11 +1,23 @@
 import React from "react";
 import DataTable from "react-data-table-component";
 
-const Table = () => {
+const Table = ({ data }) => {
   const columns = [
     {
-      name: "Title",
-      selector: (row) => row.title,
+      name: "#",
+      selector: (row) => row.market_cap_rank,
+      sortable: true,
+      width: "60px",
+    },
+    {
+      name: "Nombre",
+      cell: (row) => (
+        <div className="d-flex align-items-center">
+          <img src={row.image} alt={row.name} className="crypto_img" />
+          <p className="m-0">{row.name}</p>
+          <p className="m-0 ms-1">{row.symbol}</p>
+        </div>
+      ),
       sortable: true,
     },
     {
@@ -20,7 +32,9 @@ const Table = () => {
     },
   ];
 
-  return <DataTable title="Movie List" columns={columns} pagination />;
+  return (
+    <DataTable title="Crypto List" columns={columns} data={data} pagination />
+  );
 };
 
 export default Table;

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CardsHome from "../components/CardsHome";
 import Table from "../components/Table";
+import { getCoinList } from "../helpers/cryptoHelpers/getCryptoList";
 
 const Crypto = () => {
   const [toggle, setToggle] = useState(true);
@@ -8,6 +9,20 @@ const Crypto = () => {
     e.preventDefault();
     setToggle(!toggle);
   };
+
+  const [coins, setCoins] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        let result = await getCoinList();
+        setCoins(result);
+      } catch (error) {
+        console.error("error", error);
+      }
+    }
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="container mt-3">
@@ -33,7 +48,7 @@ const Crypto = () => {
           <CardsHome />
         </div>
         <div className="mt-5">
-          <Table />
+          <Table data={coins} />
         </div>
       </div>
     </>

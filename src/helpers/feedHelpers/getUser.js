@@ -17,7 +17,6 @@ export const getUser = async(number) => {
 
     })
     return users;
-    // console.log(users);
 }
 
 export let generateId = () => {

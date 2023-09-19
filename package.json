@@ -20,7 +20,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "sass": "^1.66.1",
-    "styled-components": "^6.0.8"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
