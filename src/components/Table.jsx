@@ -1,10 +1,14 @@
 import React from "react";
 import DataTable from "react-data-table-component";
 
-const Table = ({ data }) => {
+const Table = ({ data, setCoinnfo }) => {
+  // const handle = (e) => {
+
+  // };
+
   const columns = [
     {
-      name: "#",
+      name: <div>#</div>,
       selector: (row) => row.market_cap_rank,
       sortable: true,
       width: "60px",
@@ -12,7 +16,14 @@ const Table = ({ data }) => {
     {
       name: "Nombre",
       cell: (row) => (
-        <div className="d-flex align-items-center">
+        <div
+          className="d-flex align-items-center"
+          onClick={(e) => {
+            e.preventDefault();
+            console.log(row.id);
+            setCoinnfo(row.id);
+          }}
+        >
           <img src={row.image} alt={row.name} className="crypto_img" />
           <p className="m-0">{row.name}</p>
           <p className="m-0 ms-1">{row.symbol}</p>

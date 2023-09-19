@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CardsHome from "../components/CardsHome";
 import Table from "../components/Table";
 import { getCoinList } from "../helpers/cryptoHelpers/getCryptoList";
+import CoinInfo from "../components/CoinInfo";
 
 const Crypto = () => {
   const [toggle, setToggle] = useState(true);
@@ -9,6 +10,7 @@ const Crypto = () => {
     e.preventDefault();
     setToggle(!toggle);
   };
+  const [coininfo, setCoinnfo] = useState([]);
 
   const [coins, setCoins] = useState([]);
   useEffect(() => {
@@ -47,8 +49,11 @@ const Crypto = () => {
         <div className={toggle ? "" : "d-none"}>
           <CardsHome />
         </div>
-        <div className="mt-5">
-          <Table data={coins} />
+        <div className={!coininfo ? "mt-3" : "d-none"}>
+          <Table data={coins} setCoinnfo={setCoinnfo} />
+        </div>
+        <div className={coininfo ? "mt-3" : "d-none"}>
+          <CoinInfo coininfo={coininfo} setCoinnfo={setCoinnfo} />
         </div>
       </div>
     </>

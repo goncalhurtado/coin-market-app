@@ -7,7 +7,7 @@ export const getCoinList = async(currency = "usd") => {
         const coins = response.data
         return coins
     } catch (error) {
-        console.log("error dentro de getCinList", error);
+        console.log(error, "error dentro de getCinList");
     }
 
 }
