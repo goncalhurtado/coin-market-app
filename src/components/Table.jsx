@@ -2,10 +2,6 @@ import React from "react";
 import DataTable from "react-data-table-component";
 
 const Table = ({ data, setCoinnfo }) => {
-  // const handle = (e) => {
-
-  // };
-
   const columns = [
     {
       name: <div>#</div>,
@@ -33,7 +29,8 @@ const Table = ({ data, setCoinnfo }) => {
     },
     {
       name: "Precio",
-      selector: (row) => row.current_price.toLocaleString(),
+      selector: (row) => row.current_price,
+      //se agrego .toLocaleString() no funciona porquee el sortFunct de Table iguala , y .
       sortable: true,
     },
     {

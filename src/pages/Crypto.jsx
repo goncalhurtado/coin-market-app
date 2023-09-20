@@ -23,6 +23,7 @@ const Crypto = () => {
       }
     }
     fetchData();
+    setCoinnfo("");
   }, []);
 
   return (
