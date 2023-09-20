@@ -1,7 +1,6 @@
 import React from "react";
 
 const CoinInfo = ({ coininfo, setCoinnfo }) => {
-  console.log(coininfo);
   return (
     <div>
       <div>{coininfo.id}</div>

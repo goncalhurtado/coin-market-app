@@ -20,19 +20,20 @@ const Table = ({ data, setCoinnfo }) => {
           className="d-flex align-items-center"
           onClick={(e) => {
             e.preventDefault();
-            // console.log(row.id);
             setCoinnfo(row);
           }}
         >
           <img src={row.image} alt={row.name} className="crypto_img" />
-          <p className="m-0">{row.name}</p>
-          <p className="m-0 ms-1">{row.symbol}</p>
+          <p className="m-0 font-weight-bold">{row.name}</p>
+          <p className="m-0 ms-1 font-weight-light text-secondary">
+            {row.symbol}
+          </p>
         </div>
       ),
     },
     {
       name: "Precio",
-      selector: (row) => row.current_price,
+      selector: (row) => row.current_price.toLocaleString(),
       sortable: true,
     },
     {
@@ -42,17 +43,17 @@ const Table = ({ data, setCoinnfo }) => {
     },
     {
       name: "Cap. del mercado",
-      selector: (row) => row.market_cap,
+      selector: (row) => row.market_cap.toLocaleString(),
       sortable: true,
     },
     {
       name: "Volumen (24h)",
-      selector: (row) => row.total_volume,
+      selector: (row) => row.total_volume.toLocaleString(),
       sortable: true,
     },
     {
       name: "Acciones en circulacion",
-      selector: (row) => row.circulating_supply,
+      selector: (row) => row.circulating_supply.toLocaleString(),
       sortable: true,
     },
   ];
