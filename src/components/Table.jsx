@@ -2,6 +2,40 @@ import React from "react";
 import DataTable from "react-data-table-component";
 
 const Table = ({ data, setCoinnfo }) => {
+  const customStyles = {
+    rows: {
+      style: {
+        backgroundColor: "#000f14",
+        color: "white",
+        border: "1px solid #142e37",
+      },
+    },
+    header: {
+      style: {
+        backgroundColor: "#000f14",
+        color: "white",
+      },
+    },
+
+    headCells: {
+      style: {
+        backgroundColor: "#142e37",
+        color: "white",
+      },
+    },
+    headRow: {
+      style: {
+        backgroundColor: "#142e37",
+      },
+    },
+    pagination: {
+      style: {
+        backgroundColor: "#142e37",
+        color: "white",
+      },
+    },
+  };
+
   const columns = [
     {
       name: <div>#</div>,
@@ -13,7 +47,7 @@ const Table = ({ data, setCoinnfo }) => {
       name: "Nombre",
       cell: (row) => (
         <div
-          className="d-flex align-items-center"
+          className="d-flex align-items-center cryptoName"
           onClick={(e) => {
             e.preventDefault();
             setCoinnfo(row);
@@ -56,7 +90,13 @@ const Table = ({ data, setCoinnfo }) => {
   ];
 
   return (
-    <DataTable title="Crypto List" columns={columns} data={data} pagination />
+    <DataTable
+      title=""
+      columns={columns}
+      data={data}
+      pagination
+      customStyles={customStyles}
+    />
   );
 };
 

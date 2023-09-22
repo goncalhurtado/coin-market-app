@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CardNews from "../components/news/CardNews";
 import { getNews } from "../helpers/newsHelpers/getNews";
+import BannerCrypto from "../components/BannerCrypto";
 
 const News = () => {
   const [news, setNews] = useState([]);

@@ -9,6 +9,7 @@ import Error from "./pages/Error";
 import Feed from "./pages/Community/Feed";
 import Trending from "./pages/Community/Trending";
 import MyPage from "./pages/Community/MyPage";
+import BannerCrypto from "./components/BannerCrypto";
 
 function App() {
   return (
