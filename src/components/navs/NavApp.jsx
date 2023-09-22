@@ -3,8 +3,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import SearchBar from "./SearchBar";
 
-const NavApp = () => {
+const NavApp = ({ setSearch }) => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <div className="container-fluid">
@@ -24,6 +25,9 @@ const NavApp = () => {
             <Link className="navapp_link" to="/news">
               Noticias
             </Link>
+          </Nav>
+          <Nav className="justify-content-end">
+            <SearchBar setSearch={setSearch} />
           </Nav>
         </Navbar.Collapse>
       </div>

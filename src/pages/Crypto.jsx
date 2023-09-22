@@ -4,7 +4,8 @@ import Table from "../components/Table";
 import { getCoinList } from "../helpers/cryptoHelpers/getCryptoList";
 import CoinInfo from "../components/CoinInfo";
 
-const Crypto = () => {
+const Crypto = ({ search, setSearch }) => {
+  console.log(search, "aca en crypto");
   const [toggle, setToggle] = useState(true);
   const handleToggle = (e) => {
     e.preventDefault();

@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Crypto from "./pages/Crypto";
 import News from "./pages/News";
 import Community from "./pages/Community";
-import React from "react";
+import React, { useState } from "react";
 import Error from "./pages/Error";
 import Feed from "./pages/Community/Feed";
 import Trending from "./pages/Community/Trending";
@@ -12,12 +12,17 @@ import MyPage from "./pages/Community/MyPage";
 import BannerCrypto from "./components/BannerCrypto";
 
 function App() {
+  const [search, setSearch] = useState([]);
+
   return (
     <>
-      <NavApp />
+      <NavApp setSearch={setSearch} />
       <Routes>
         <Route path="*" element={<Error />} />
-        <Route path="/" element={<Crypto />} />
+        <Route
+          path="/"
+          element={<Crypto search={search} setSearch={setSearch} />}
+        />
         <Route path="/community/*" element={<Feed />} />
         <Route path="/community/trending" element={<Trending />} />
         <Route path="/community/mypage" element={<MyPage />} />
